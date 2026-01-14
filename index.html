@@ -2,17 +2,50 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./assets/css/style.css" />
-        <title>Project</title>
-    </head>
+        <title>Romantic Intro</title>
 
+        <link rel="stylesheet" href="./assets/css/style.css" />
+    </head>
     <body>
-        <div class="center">
-            <div class="heart"></div>
+        <!-- THREE.JS BACKGROUND -->
+        <canvas id="bg"></canvas>
+
+        <div class="intro">
+            <div class="stage">
+                <!-- HEART -->
+                <div class="heart"></div>
+
+                <!-- HEART PARTICLES -->
+                <div class="particles"></div>
+
+                <!-- QUOTE -->
+                <div class="quote">
+                    <p>Every heartbeat carries a story waiting to be written.</p>
+                </div>
+
+                <!-- BOOK -->
+                <div class="book">
+                    <div class="cover left">
+                        <img src="./assets/images/heart.png" alt="" />
+                        <span class="title-main">Write your story</span>
+                        <span class="title-accent">Be & shine like star</span>
+                    </div>
+                    <div class="pages"></div>
+                    <div class="spine"></div>
+                    <div class="cover right">
+                        <img src="./assets/images/story.png" alt="story" />
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <script src="./assets/js/main.js"></script>
+        <!-- GSAP -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+        <!-- THREE -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.159.0/three.min.js"></script>
+
+        <script type="module" src="./assets/js/main.js"></script>
     </body>
 </html>
